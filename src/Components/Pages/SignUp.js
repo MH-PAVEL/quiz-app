@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import classes from '../../styles/SignUp.module.css';
 import Button from '../Button';
 import CheckBox from '../CheckBox';
@@ -17,10 +18,10 @@ const SignUp = () => {
                     <TextInput type="text" placeholder="Enter Your E-mail" icon='alternate_email' />
                     <TextInput type="password" placeholder="Enter Your Password" icon='lock' />
                     <TextInput type="password" placeholder="Confirm Your Password" icon='lock_clock' />
-                    <CheckBox text="I agree to the Terms &amp; Conditions" />?
-                    <Button>Submit now</Button>
+                    <CheckBox text="I agree to the Terms &amp; Conditions" />
+                    <Button><span>Submit now</span></Button>
                     <div className="info">
-                        Already have an account? <a href="login.html">Login</a> instead.
+                        Already have an account? <Link to="/login">Login</Link> instead.
                     </div>
                 </From>
             </div>
