@@ -6,7 +6,7 @@ import Account from './Account';
 
 const Nav = () => {
     return (
-        <div>
+        <>
             <nav className={classes.nav}>
                 <ul>
                     <li>
@@ -18,7 +18,7 @@ const Nav = () => {
                 </ul>
                 <Account></Account>
             </nav>
-        </div>
+        </>
     );
 };
 
