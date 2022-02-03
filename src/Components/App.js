@@ -29,13 +29,13 @@ function App() {
                 <Login />
               </PublicRouter>} />
 
-            <Route exact path="/quiz" element={
+            <Route exact path="/quiz/:id" element={
               <PrivateRoute>
                 <Quiz />
               </PrivateRoute>} />
 
 
-            <Route exact path="/result" element={
+            <Route exact path="/result/:id" element={
               <PrivateRoute>
                 <Result />
               </PrivateRoute>} />
